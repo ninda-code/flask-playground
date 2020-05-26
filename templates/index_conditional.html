@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+		<h1>Hello</h1>
+		{% for x in content%}
+			{% if x== "rasyid" %}
+			<p>Hi {{x}}, Super Gecko Muscle!</p>
+			{% elif x== "fatih" %}
+			<p>Hi {{x}}, Super Cat Boy Ears!</p>
+			{% else %}
+			<p>Hi {{x}}, Super Owlet!</p>
+			{% endif %}
+		{% endfor %}
+{% endblock%}
